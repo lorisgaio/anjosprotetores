@@ -1,0 +1,5 @@
+rails g model User name kind:integer status:integer
+
+rails g model Tutor name cpf address neighborhood city state phone
+
+rails g model Animal tutor:references{optional} date_entry:datetime name breed age:integer color gender:integer castrated:boolean vaccinated:boolean dewormed:boolean died:boolean chip_n veterinary diagnostic:text treatment:text adoption_date:datetime
