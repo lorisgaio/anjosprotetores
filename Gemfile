@@ -18,6 +18,7 @@ gem 'uglifier', '>= 1.3.0'
 
 #Gens adicionais
 gem 'rails_admin', '~> 1.3'
+gem 'devise'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
