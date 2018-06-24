@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tutor: one
+  date_entry: 2018-06-24 12:33:01
+  name: MyString
+  breed: MyString
+  age: 1
+  color: MyString
+  gender: 1
+  castrated: false
+  vaccinated: false
+  dewormed: false
+  died: false
+  chip_n: MyString
+  veterinary: MyString
+  diagnostic: MyText
+  treatment: MyText
+  obs: MyText
+  adoption_date: 2018-06-24 12:33:01
+
+two:
+  tutor: two
+  date_entry: 2018-06-24 12:33:01
+  name: MyString
+  breed: MyString
+  age: 1
+  color: MyString
+  gender: 1
+  castrated: false
+  vaccinated: false
+  dewormed: false
+  died: false
+  chip_n: MyString
+  veterinary: MyString
+  diagnostic: MyText
+  treatment: MyText
+  obs: MyText
+  adoption_date: 2018-06-24 12:33:01
