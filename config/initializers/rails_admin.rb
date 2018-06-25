@@ -1,5 +1,6 @@
 RailsAdmin.config do |config|
 
+  #Erro do ActiveStorage no rails 5.2
   config.excluded_models = ['ActiveStorage::Blob', 'ActiveStorage::Attachment']
 
   ### Popular gems integration
@@ -11,7 +12,7 @@ RailsAdmin.config do |config|
   config.current_user_method(&:current_user)
 
   ## == Cancan ==
-  # config.authorize_with :cancan
+  config.authorize_with :cancan
 
   ## == Pundit ==
   # config.authorize_with :pundit
@@ -24,6 +25,26 @@ RailsAdmin.config do |config|
   ## == Gravatar integration ==
   ## To disable Gravatar integration in Navigation Bar set to false
   # config.show_gravatar = true
+
+  config.model User do
+    create do
+      field :name
+      field :kind
+      field :status
+      field :email
+      field :password
+      field :password_confirmation
+    end
+  end
+
+
+
+
+
+
+
+
+
 
   config.actions do
     dashboard                     # mandatory
