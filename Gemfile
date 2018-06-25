@@ -20,6 +20,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'rails_admin', '~> 1.3'
 gem 'devise'
 gem 'cancancan', '~> 2.0'
+gem 'rails_admin_rollincode', '~> 1.0'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
