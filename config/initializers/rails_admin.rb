@@ -3,6 +3,9 @@ RailsAdmin.config do |config|
   #Erro do ActiveStorage no rails 5.2
   config.excluded_models = ['ActiveStorage::Blob', 'ActiveStorage::Attachment']
 
+  require Rails.root.join('lib', 'rails_admin', 'rails_admin_pdf.rb')
+  RailsAdmin::Config::Actions.register(RailsAdmin::Config::Actions::Pdf)
+
   ### Popular gems integration
 
   ## == Devise ==
@@ -59,9 +62,12 @@ RailsAdmin.config do |config|
   config.model Animal do
     navigation_icon 'fa fa-paw'
     list do
-      field :id
+      field :id do
+        column_width 50
+      end
       field :name
       field :tutor
+      field :species
       field :breed
       field :age
       field :gender
@@ -105,6 +111,9 @@ RailsAdmin.config do |config|
     edit
     delete
     show_in_app
+    pdf do
+      only Animal
+    end
 
     ## With an audit adapter, you can add:
     # history_index

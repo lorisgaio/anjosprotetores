@@ -53,6 +53,7 @@ pt-BR:
       animal:
         name: "Nome"
         date_entry: "Data da Entrada"
+        species: "Espécie"
         breed: "Raça"
         age: "Idade"
         color: "Cor"
@@ -121,6 +122,8 @@ pt-BR:
       item: "Item"
       message: "Mensagem"
     actions:
+      pdf:
+        menu: "Termo Adoção"
       dashboard:
         title: "Administração do Site"
         menu: "Dashboard"
